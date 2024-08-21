@@ -1,0 +1,48 @@
+.block {
+  display: block;
+  width: max-content;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.lightgray {
+  color: var(--lightgray);
+}
+
+.white {
+  color: var(--white);
+}
+
+.black {
+  color: var(--black);
+}
+
+.gray2 {
+  color: var(--gray2);
+}
+
+.text {
+  transition: 0.2s;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.trochut {
+  font-family: "Trochut", sans-serif;
+}
+
+.diamondBridge {
+  font-family: "DiamondBridge";
+}
+
+.whisper {
+  font-family: "Whisper", cursive;
+}

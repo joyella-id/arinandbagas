@@ -1,0 +1,46 @@
+.loader {
+  border: 3px solid var(--primary);
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.primary {
+  border: 3px solid var(--primary);
+  border-top: 3px solid transparent;
+}
+
+.lightgray {
+  border: 3px solid var(--lightgray);
+  border-top: 3px solid transparent;
+}
+
+.gray {
+  border: 3px solid var(--gray);
+  border-top: 3px solid transparent;
+}
+
+.secondary {
+  border: 3px solid var(--secondary);
+  border-top: 3px solid transparent;
+}
+
+.white {
+  border: 3px solid var(--white);
+  border-top: 3px solid transparent;
+}
+
+.black {
+  border: 3px solid var(--black);
+  border-top: 3px solid transparent;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

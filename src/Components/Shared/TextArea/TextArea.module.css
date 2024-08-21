@@ -1,0 +1,23 @@
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--lightgray2);
+  background: var(--lightgray3);
+  transition: 200ms;
+  resize: none;
+}
+
+.textarea::placeholder {
+  opacity: 0.5;
+}
+
+.textarea:active {
+  outline: none;
+}
+
+.textarea:focus {
+  outline: none;
+}

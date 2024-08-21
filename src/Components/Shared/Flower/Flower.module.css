@@ -1,0 +1,9 @@
+.flower {
+  position: absolute;
+  object-fit: contain;
+}
+
+.flower > img {
+  width: 100%;
+  max-height: 100%;
+}
