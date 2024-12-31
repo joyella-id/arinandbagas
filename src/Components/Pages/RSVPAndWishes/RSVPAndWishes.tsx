@@ -163,7 +163,7 @@ export const RSVPAndWishes = () => {
           </div>
         </div>
       </MobilePage>
-      <MobilePage
+      {/* <MobilePage
         fullHeight={false}
         id="wishes"
         customClassName={`${styles.wishContainer} margin--page-default-b padding--page-default-l padding--page-default-r`}
@@ -186,7 +186,7 @@ export const RSVPAndWishes = () => {
             </React.Fragment>
           ))
         )}
-      </MobilePage>
+      </MobilePage> */}
     </>
   );
 };
