@@ -1,0 +1,29 @@
+.textOutline {
+  text-shadow: .1px 0 var(--gray), -.1px 0 var(--gray)
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.denah {
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+
+  >img {
+    max-width: 100%;
+  }
+}
+
+.denahInModal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  >img {
+    width: 100%;
+  }
+}

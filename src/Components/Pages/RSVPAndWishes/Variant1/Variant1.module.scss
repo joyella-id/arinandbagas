@@ -1,0 +1,42 @@
+.wishContainer {
+  overflow: auto;
+  max-height: 50lvh;
+}
+
+.bubble {
+  background: var(--lightgray4);
+  padding: 8px 16px;
+  border-radius: 6px 6px 6px 0px;
+  box-shadow: 0px 2px 1px 0px #00000033;
+  text-align: justify;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 10px;
+    height: 11px;
+    border-radius: 0px 0px 999px 0px;
+    background: var(--lightgray4);
+    box-shadow: 0px 2px 1px 0px #00000033;
+    display: block;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--lightgray2);
+  margin: 30px 0px 20px 0;
+  border-radius: 2px;
+}
+
+.loadingContainer {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}

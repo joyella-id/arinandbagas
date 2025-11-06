@@ -1,0 +1,7 @@
+.video {
+  transition: 0.2s;
+}
+
+.videoGrayscale {
+  filter: grayscale(1) brightness(0.5);
+}

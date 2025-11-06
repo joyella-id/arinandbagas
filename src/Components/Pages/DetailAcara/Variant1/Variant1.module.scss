@@ -1,0 +1,15 @@
+.mobileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(0deg, var(--primary-background) 0%, white 20%);
+}
+
+.detailContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+  flex: 1
+}

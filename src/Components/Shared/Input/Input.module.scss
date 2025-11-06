@@ -1,0 +1,22 @@
+.input {
+  width: 100%;
+  padding: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--lightgray2);
+  background: var(--lightgray3);
+  transition: 200ms;
+
+  &::placeholder {
+    opacity: .5;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

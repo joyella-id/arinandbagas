@@ -1,0 +1,32 @@
+.block {
+  display: block;
+  width: max-content;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.lightgray {
+  color: var(--lightgray);
+}
+
+.white {
+  color: var(--white);
+}
+
+.black {
+  color: var(--black);
+}
+
+.gray2 {
+  color: var(--gray2);
+}
+
+.text {
+  transition: 0.2s;
+}

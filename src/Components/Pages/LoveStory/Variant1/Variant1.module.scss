@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigationButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30px;
+  min-height: 30px;
+  background-color: var(--primary);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: var(--primary-hover);
+  }
+
+}
+
+.storyContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.storyCarouselContainer {
+  flex-grow: 1;
+  overflow: hidden;
+  padding-top: 20px;
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+
+  @media (max-width:480px) {
+    padding-top: 100px;
+  }
+
+}
+
+.movingContainer {
+  width: calc(300% + 200px);
+  height: 100%;
+  display: flex;
+  gap: 100px;
+  transition: .2s;
+}
+
+.singleStory {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.photo {
+  flex-grow: 1;
+  position: relative;
+  max-width: 400px;
+
+  @media (max-width:480px) {
+    max-width: 280px;
+  }
+
+}
+
+.archBorder {
+  position: absolute;
+  top: 1%;
+  left: 7%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--primary);
+  border-radius: 999px 999px 0px 0px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 20px;
+  z-index: 999;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 999px 999px 0px 0px;
+  overflow: hidden;
+  position: absolute;
+  top: -2%;
+
+  >img {
+    object-fit: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%
+  }
+}
+
+.whiteOverflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, white 0%, transparent 25%);
+  border-radius: 999px 999px 0px 0px;
+}

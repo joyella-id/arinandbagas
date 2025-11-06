@@ -1,0 +1,40 @@
+.select {
+  width: 100%;
+  padding: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--lightgray2);
+  background: var(--lightgray3);
+  color: black;
+  transition: 200ms;
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  option:disabled {
+    color: var(--gray);
+  }
+
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "▾";
+  font-size: 14px;
+  bottom: 8px;
+  right: 16px;
+  position: absolute;
+  pointer-events: none;
+  color: var(--gray)
+}

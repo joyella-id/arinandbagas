@@ -1,0 +1,26 @@
+.saudara {
+  border: 1px solid var(--secondary);
+  border-radius: 999px;
+}
+
+.backgroundTransition {
+  height: 25px;
+  position: relative;
+
+  >div {
+    background: white;
+    position: absolute;
+    height: 75px;
+    top: 24px;
+    width: 100%;
+  }
+}
+
+.page {
+  background-color: var(--primary-background);
+}
+
+.textContainer {
+  z-index: 999;
+  position: relative;
+}
