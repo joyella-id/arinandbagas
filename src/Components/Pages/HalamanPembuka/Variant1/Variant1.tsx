@@ -165,13 +165,6 @@ export const Variant1 = () => {
               </Text>
             </div>
             <div>
-              {/* {convertFunction("openButton", {
-                openButton: {
-                  onClick: () => {
-                    // alert("click button oi");
-                  },
-                },
-              })} */}
               <Button
                 className="margin--large-t"
                 onClick={() => {

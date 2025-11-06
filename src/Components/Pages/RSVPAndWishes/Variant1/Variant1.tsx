@@ -360,7 +360,6 @@ export const Variant1 = () => {
   };
 
   useEffect(() => {
-    alert('Hi')
     fetchRsvp();
   }, []);
 
