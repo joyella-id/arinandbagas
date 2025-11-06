@@ -355,14 +355,6 @@ export const Variant1 = () => {
     fetchFunction: createRsvpFetchFunction,
   } = useFetchFunction();
 
-  const fetchRsvp = () => {
-    rsvpFetchFunction(() => fetch("/rsvp"));
-  };
-
-  useEffect(() => {
-    fetchRsvp();
-  }, []);
-
   return (
     <>
       <MobilePage
@@ -415,26 +407,28 @@ export const Variant1 = () => {
                   return;
                 }
                 createRsvpFetchFunction(
+                  // () =>
+                  //   fetch("/rsvp", {
+                  //     method: "POST",
+                  //     headers: {
+                  //       "Content-Type": "application/json",
+                  //     },
+                  //     body: JSON.stringify({
+                  //       name,
+                  //       relation,
+                  //       wish: message,
+                  //       confirmation: isComing,
+                  //     }),
+                  //   }),
                   () =>
-                    fetch("/rsvp", {
-                      method: "POST",
-                      headers: {
-                        "Content-Type": "application/json",
-                      },
-                      body: JSON.stringify({
-                        name,
-                        relation,
-                        wish: message,
-                        confirmation: isComing,
-                      }),
-                    }),
+                    new Promise<any>((resolve) => setTimeout(resolve, 1000)),
                   () => {
                     toast.success("Terima kasih telah mengisi RSVP!");
                     setName("");
                     setRelation("");
                     setMessage("");
                     setIsComing(undefined);
-                    fetchRsvp();
+                    // fetchRsvp();
                   }
                 );
               }}
@@ -446,7 +440,7 @@ export const Variant1 = () => {
           </div>
         </div>
       </MobilePage>
-      {/* <MobilePage
+      <MobilePage
         fullHeight={false}
         id="wishes"
         customClassName={`${styles.wishContainer} margin--page-default-b padding--page-default-l padding--page-default-r`}
@@ -456,22 +450,20 @@ export const Variant1 = () => {
             <LoadingSpinner size={40} />
           </div>
         ) : (
-          (rsvpData?.length ? rsvpData : listDefaultData)?.map(
-            (wish, index) => (
-              <React.Fragment key={index}>
-                {index !== 0 && <div className={styles.divider}></div>}
-                <SingleWish
-                  key={index}
-                  name={wish.name}
-                  relation={wish.relation}
-                  message={wish.wish}
-                  isComing={wish.confirmation}
-                />
-              </React.Fragment>
-            )
-          )
+          listDefaultData?.map((wish, index) => (
+            <React.Fragment key={index}>
+              {index !== 0 && <div className={styles.divider}></div>}
+              <SingleWish
+                key={index}
+                name={wish.name}
+                relation={wish.relation}
+                message={wish.wish}
+                isComing={wish.confirmation}
+              />
+            </React.Fragment>
+          ))
         )}
-      </MobilePage> */}
+      </MobilePage>
     </>
   );
 };
