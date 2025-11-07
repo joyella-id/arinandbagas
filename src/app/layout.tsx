@@ -17,11 +17,16 @@ export const viewport: Viewport = {
   maximumScale: 1,
   colorScheme: "only light",
 };
+const title = "The Wedding of Arin & Bagas";
+const description =
+  "We will be getting married on September 15th 2024. Join us in celebrating the happiest day of our life! Powered by Ourjoy.id";
+const url = "https://arindanbagas.ourjoy.id/";
+const imageUrl =
+  "https://utfs.io/f/d9bd82e7-8ef0-4901-8c3a-84880157e4f7-3ss2nh.jpg";
 
 export const metadata: Metadata = {
-  title: "Arin & Bagas",
-  description:
-    "Website undangan pernikahan Arin & Bagas. Mari bergabung dan berbagi kebahagiaan bersama kami!",
+  title,
+  description,
 };
 
 export default function RootLayout({
@@ -32,39 +37,21 @@ export default function RootLayout({
   return (
     <html lang="en" style={{ overflow: "hidden" }}>
       <head>
-        <title>The Wedding of Arin & Bagas</title>
-        <meta name="title" content="The Wedding of Arin & Bagas" />
-        <meta
-          name="description"
-          content="We will be getting married on September 15th 2024. Join us in celebrating the happiest day of our life!"
-        />
+        <title>{title}</title>
+        <meta name="title" content={title} />
+        <meta name="description" content={description} />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://arindanbagas.ourjoy.id/" />
-        <meta property="og:title" content="The Wedding of Arin & Bagas" />
-        <meta
-          property="og:description"
-          content="We will be getting married on September 15th 2024. Join us in celebrating the happiest day of our life!"
-        />
-        <meta
-          property="og:image"
-          content="https://utfs.io/f/d9bd82e7-8ef0-4901-8c3a-84880157e4f7-3ss2nh.jpg"
-        />
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={imageUrl} />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://arindanbagas.ourjoy.id/"
-        />
-        <meta property="twitter:title" content="The Wedding of Arin & Bagas" />
-        <meta
-          property="twitter:description"
-          content="We will be getting married on September 15th 2024. Join us in celebrating the happiest day of our life!"
-        />
-        <meta
-          property="twitter:image"
-          content="https://utfs.io/f/d9bd82e7-8ef0-4901-8c3a-84880157e4f7-3ss2nh.jpg"
-        />
+        <meta property="twitter:url" content={url} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:image" content={imageUrl} />
       </head>
       <body className={inter.className}>
         <div
