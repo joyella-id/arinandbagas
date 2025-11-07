@@ -7,7 +7,7 @@ import styles from "./Variant1.module.scss";
 export const Variant1 = () => {
   const whatsappNumber = "+6287815917683";
   const message =
-    "Halo OurJoy by Joyella, apa bisa tanya tanya & pesan undangan online ?";
+    "Halo OurJoy by Joyella, apa bisa tanya tanya untuk pesan undangan online ?";
   const whatsappUrl = new URL(`https://wa.me/${whatsappNumber}`);
   whatsappUrl.searchParams.append("text", message);
 
