@@ -406,31 +406,11 @@ export const Variant1 = () => {
                 if (!name || !relation || !message || !isComing) {
                   return;
                 }
-                createRsvpFetchFunction(
-                  // () =>
-                  //   fetch("/rsvp", {
-                  //     method: "POST",
-                  //     headers: {
-                  //       "Content-Type": "application/json",
-                  //     },
-                  //     body: JSON.stringify({
-                  //       name,
-                  //       relation,
-                  //       wish: message,
-                  //       confirmation: isComing,
-                  //     }),
-                  //   }),
-                  () =>
-                    new Promise<any>((resolve) => setTimeout(resolve, 1000)),
-                  () => {
-                    toast.success("Terima kasih telah mengisi RSVP!");
-                    setName("");
-                    setRelation("");
-                    setMessage("");
-                    setIsComing(undefined);
-                    // fetchRsvp();
-                  }
-                );
+                toast.success("Terima kasih telah mengisi RSVP!");
+                setName("");
+                setRelation("");
+                setMessage("");
+                setIsComing(undefined);
               }}
               customStyle={{ width: "50%", margin: "auto" }}
             >
